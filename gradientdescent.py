@@ -121,6 +121,14 @@ w_final, b_final, J_hist,p_hist = w_final, b_final, J_hist, p_hist = gradient_de
 
 print(f"(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
 
+print(f"(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
+
+square_feet = float(input("Please give a desired value for in square-meters(1000s):"))
+
+print(f"The estimated price for a house that is {square_feet} squarefeet(in 1000s) is : {w_final * square_feet + b_final:0.1f} thousand dollars")
+
+
+
 
 
 
